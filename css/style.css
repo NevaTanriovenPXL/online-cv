@@ -1,0 +1,215 @@
+*{
+    box-sizing: border-box;
+    font-family: Arial, Roboto, open-sans, sans-serif;
+}
+
+h1,h2{
+   font-family: "Rockwell Nova Light", sans-serif;
+   color: plum;
+}
+h1{
+    letter-spacing: 4px;
+}
+h3{
+    font-family: "Rockwell Nova Light", sans-serif;
+}
+
+img:hover{
+    box-shadow: 10px 10px 5px #fac5e8
+}
+
+th{
+    text-align: center;
+    background-color: plum;
+    padding: 10px;
+}
+.talen-tabel tr:nth-child(even){
+    background-color: plum;
+}
+.talen-tabel tr:nth-child(odd){
+    background-color: #f4dcf7;
+}
+.talen-tabel td{
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.ervaringen{
+    list-style: none;
+}
+.ervaringen li {
+    margin-bottom: 20px;
+    padding: 15px;
+    border-left: 4px solid plum;
+    background-color: #f9f2fb;
+    transition: background-color 1s ease, transform 0.3s ease;
+}
+
+.ervaringen li:hover {
+    background-color: plum;
+    transform: translateX(3px);
+}
+.ervaringen h3 {
+    margin-bottom: 5px;
+}
+
+.container{
+    display: flex;
+    gap: 30px;
+    max-width: 1100px;
+    margin: 40px auto;
+    background-color: whitesmoke;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+}
+
+.kolom-links{
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    gap: 30px;
+    background: #f4dcf7;
+    padding: 20px 30px 20px 20px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.kolom-links section{
+    padding-bottom: 20px;
+    border-bottom: 3px solid plum;
+}
+
+.kolom-links section:last-child{
+    border-bottom: none;
+    transform: none !important;
+}
+
+.kolom-links section:hover{
+    transform: translateY(-20px);
+    box-shadow: 10px 10px 5px #fac5e8
+}
+
+.contact li{
+    list-style: none;
+    margin-left: -20px;
+}
+
+.contact li i{
+    color: plum;
+}
+.contact a{
+    text-decoration: none;
+    color: black;
+}
+.contact a:hover{
+    text-decoration: none;
+    color: fuchsia;
+}
+
+.kolom-rechts{
+    display: flex;
+    flex-direction: column;
+    width: 75%;
+    gap: 20px;
+    padding: 10px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+body{
+    background-color: #fac5e8;
+}
+
+
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+html{
+    scroll-behavior: smooth;
+}
+
+footer{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    margin-left: 13rem;
+    margin-right: 13rem;
+    color: white;
+    background-color: plum;
+}
+
+footer a{
+    text-decoration: none;
+    color: white;
+}
+
+footer a:hover{
+    color: fuchsia;
+}
+
+.header{
+    text-align: center;
+}
+
+.header img{
+    width: 120px;
+    margin-top: 10px;
+    transition: box-shadow 0.3s ease, transform 0.3s ease;
+}
+
+.header img:hover{
+    box-shadow: 10px 10px 5px #fac5e8;;
+    transform: scale(1.03);
+}
+
+@media (min-width: 576px) and (max-width: 991px){
+    .container{
+        flex-direction: column;
+        gap: 20px;
+        margin: 20px;
+    }
+    .kolom-links, .kolom-rechts{
+        width: 100%;
+    }
+}
+
+@media (max-width: 575px){
+    .container{
+        flex-direction: column;
+        margin: 10px;
+        gap: 10px;
+    }
+    .kolom-links, .kolom-rechts{
+        width: 100%;
+        padding: 10px;
+    }
+    footer{
+        flex-direction: column;
+        text-align: center;
+        gap: 10px;
+        margin: 0 5px;
+    }
+}
+
+@media (max-width: 575px){
+    .talen-tabel{
+        display: none;
+    }
+    .talen-lijst{
+        display: block;
+        list-style: none;
+        padding: 0;
+    }
+    .talen-lijst li{
+        background-color: #f4dcf7;
+        padding: 10px;
+        margin-bottom: 5px;
+        border-left: 4px solid plum;
+    }
+}
+
+@media (min-width: 576px){
+    .talen-lijst{
+        display: none;
+    }
+}
+
+
